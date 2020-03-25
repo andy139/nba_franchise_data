@@ -1,0 +1,25 @@
+#svg-container {
+    display: flex;
+    justify-content: center;
+
+    inset: 0px 0px 20px 10px rgba(0,0,0,0.6);
+    
+    width: 100%;
+    height: 800px;
+
+}
+
+svg {
+    
+    background-color: lightgoldenrodyellow;
+    -moz-box-shadow: inset 0 0 5px 5px #888;
+    -webkit-box-shadow: inset 0 0 5px 5px#888;
+    box-shadow: inset 0 0 5px 5px #888;
+}
+
+.flex-middle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
