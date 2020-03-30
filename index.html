@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="dist//index.css">
+    <title>NBA Franchises</title>
+ 
+</head>
+
+<body>
+   
+    <h1>NBA Teams</h1>
+    <div id="sideBar"></div>
+    <div id="svg-container">
+        
+    </div>
+
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/src/data.js"></script>
+    <script src="/src/bubble.js"></script>
+    
+    <script src="/src/regionForce.js"></script>
+    <script src="/src/championForce.js"></script>
+    <script src="/src/valuationForce.js"></script>
+
+    <script src="/src/champions.js"></script>
+    <script src = "/src/wins.js"> </script>
+    
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.check').click(function () {
+                $('.check').not(this).prop('checked', false);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
