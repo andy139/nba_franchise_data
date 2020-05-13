@@ -70,7 +70,21 @@ let bubbles = canvas
     "fill",
         d => "url(#" + d.Franchise.toLowerCase().replace(/ /g, "-") + ")"
     )
-    .style("stroke", "gold")
+    .style("fill", d=> {
+        if (d.Subregion === "Pacific"){
+            return "#D2AB99"
+        } else if(d.Subregion === "Atlantic"){
+            return "#757780"
+        } else if (d.Subregion === "Southeast"){
+            return "#D2CCA1"
+        } else if (d.Subregion === "Central"){
+            return "#387780"
+        } else if (d.Subregion === "Southwest") {
+            return "#DBD4D3"
+        } else if (d.Subregion === "Northwest"){
+            return "#E83151"
+        }
+    })
     .on("click", d => console.log(d));
 
 //create side menu
@@ -80,10 +94,11 @@ let createSideMenu = () => {
     console.log(data);
     let i = 0;
   
-    $('#sideBar').append("<h1 class = 'header' > NBA Franchises </h1>")
-    $('#sideBar').append("<div class = 'checkboxes'></div>")
+    // $('#sideBar').append("<h1 class = 'header' > NBA Teams </h1>")
+    // $('#sideBar').append("<div class = 'checkboxes'></div>")
     $('.checkboxes').append("<span id='championships'>Championships </span>")
     $(".checkboxes").append("<span id='valuation'>Valuation </span>");
+
     data.forEach( team => {
         team.id = i;
         $('#sideBar').append("<div class = 'team" + team.id + "'>" + team.Franchise + "</div>");
