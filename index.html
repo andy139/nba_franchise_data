@@ -2,51 +2,61 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="dist//index.css">
-    <title>NBA Teams</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./dist/main.js"></script>
+    <title>NBA Stats</title>
+
  
 </head>
 
 <body>
-<!--    
-    <h1>NBA Teams</h1> -->
-    <div class="full-container">hkhj
+    
 
-        <div id="sideBar">
-            <h1>NBA Teams</h1>
-            <h2>Visualize</h2>
-            <div class='checkboxes'></div>
-        
+    <div class="full-container">
+        <div class="navbar"></div>
+
+        <div class="main">
+            <div class="sidebar">
+
+            </div>
+
+            <div class="container-2">
+                <div class="sub-menu">
+                 
+                </div>
+                <div id="svg-container">
+
+                </div>
+
+            </div>
+
+
         </div>
-        <div id="svg-container">
         
-        </div>
+        <!-- <div>
 
+            <div id="sideBar">
+                <h1>NBA Teams</h1>
+                <h2>Visualize</h2>
+                <div class='checkboxes'></div>
+            
+            </div>
+            <div class="sub-container">
+                <div id="svg-container">
+            
+                </div>
+                <div class="bottomnavbar">
+                    Bottom Settings
+                </div>
+            </div>
 
+        </div> -->
+        
+      
     </div>
-
-
-
-    <script src="https://d3js.org/d3.v5.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="./src/data.js"></script>
-    <script src="./src/bubble.js"></script>
-    
-    <script src="./src/regionForce.js"></script>
-    <script src="./src/championForce.js"></script>
-    <script src="./src/valuationForce.js"></script>
-
-    <script src="./src/champions.js"></script>
-    <script src = "./src/wins.js"> </script>
-    
-    <script src="./dist/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.check').click(function () {
-                $('.check').not(this).prop('checked', false);
-            });
-        });
-    </script>
 
 
 </body>

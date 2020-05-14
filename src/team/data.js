@@ -31,6 +31,4 @@ Charlotte Hornets,NBA,1988-89,2019-20,30,2395,1050,1345,0.438,10,0,0,0,./images/
 Denver Nuggets,NBA/ABA,1967-68,2019-20,53,4287,2159,2128,0.504,34,11,0,0,./images/,nuggets.png,Denver Nuggets,,1.6,west,Northwest
 NBA Logo,NBA/BAA,1946-47,2019-20,74,97304,61842,61360,0.496033333,896,31,9,77,./images/,nba.png,NBA Team,,64.1,,`
 
-
-
 let data = d3.csvParse(csv);
