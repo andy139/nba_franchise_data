@@ -19,7 +19,7 @@
   "dependencies": {
     "babel-loader": "^8.1.0",
     "d3": "^5.15.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "pretty-checkbox": "^3.0.3"
   }
 }
